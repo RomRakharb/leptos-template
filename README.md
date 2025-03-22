@@ -1,1 +1,1 @@
-# base-template
+# leptos-template
