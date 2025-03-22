@@ -21,8 +21,6 @@ cargo install cargo-leptos
 
 rustup component add rust-analyzer
 npm i -g vscode-langservers-extracted
-
-cargo init
 rustup target add wasm32-unknown-unknown
 
 echo
