@@ -18,6 +18,7 @@ sudo apt install helix
 cargo install bacon
 cargo install trunk
 cargo install cargo-leptos
+cargo install leptosfmt
 
 rustup component add rust-analyzer
 npm i -g vscode-langservers-extracted
