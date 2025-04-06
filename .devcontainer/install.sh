@@ -16,7 +16,6 @@ sudo apt update
 
 sudo apt install helix
 cargo install bacon
-cargo install trunk
 cargo install cargo-leptos
 cargo install leptosfmt
 
