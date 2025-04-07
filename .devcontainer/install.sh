@@ -7,17 +7,15 @@ echo "---------------------"
 echo
 
 sudo apt update && sudo apt -y upgrade
+npm install npm@latest -g
 
-sudo apt-get install -y software-properties-common
-sudo apt update
+git clone https://github.com/helix-editor/helix.git
+cargo install --path ./helix/helix-term --locked
+rm -f helix -R
 
-sudo add-apt-repository -y ppa:maveonair/helix-editor
-sudo apt update
-
-sudo apt install helix
-cargo install bacon
-cargo install cargo-leptos
-cargo install leptosfmt
+cargo install bacon --locked
+cargo install cargo-leptos --locked
+cargo install leptosfmt --locked
 
 rustup component add rust-analyzer
 npm i -g vscode-langservers-extracted
