@@ -17,6 +17,12 @@ cp -r ./helix/runtime/queries ~/.config/helix/runtime/
 cp -r ./helix/runtime/themes ~/.config/helix/runtime/
 cp ./helix/runtime/tutor ~/.config/helix/runtime/
 echo -e "[editor]\ntrue-color = true" > ~/.config/helix/config.toml
+mkdir -p ~/.helix
+echo '[[language]]
+name = "rust"
+
+[language-server.rust-analyzer.config]
+cargo = { allFeatures = true }' > ~/.helix/languages.toml
 rm -f helix -R
 
 cargo install bacon --locked
